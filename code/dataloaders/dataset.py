@@ -13,7 +13,7 @@ from scipy.ndimage import rotate, zoom
 import pdb
 
 class BaseDataSets(Dataset):
-    def __init__(self, base_dir=None, split='train', num=None, transform=None):
+    def __init__(self, base_dir='/kaggle/working/BCP/data_split/ACDC', split='train', num=None, transform=None):
         self._base_dir = base_dir
         self.sample_list = []
         self.split = split
